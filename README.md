@@ -1,2 +1,2 @@
 # gitRepo
-This is a reactJS application for github repositories finder per username using github ApI .
+This is a reactJS application for GitHub repositories finder per username using GitHub API .
