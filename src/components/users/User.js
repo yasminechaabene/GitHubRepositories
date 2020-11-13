@@ -7,18 +7,7 @@ import GithubContext from '../../context/github/githubContext';
 
 
 const User = ({ match }) => {
-  
-
-
-  
-  
-  
-
-
-
-
-
-  const githubContext = useContext(GithubContext);
+  const githubContext = useContext(GithubContext);   //GitHub components profile
   const {
     getUser,
     loading,
@@ -89,13 +78,13 @@ const User = ({ match }) => {
             style={{ width: '150px' }}
           />
           <h1>{name}</h1>
-          <p>Location: {location} </p>
+          <p>Location: {location} </p>  
         </div>
 
         <div>
           {bio && (
             <>
-              <h3>Bio</h3>
+              <h3>Bio</h3>    //GitHub profile Bio
               <p>{bio}</p>
             </>
           )}
@@ -140,7 +129,7 @@ const User = ({ match }) => {
           value={input}
           onChange={onChange}
         />
-      <Repos repos={repos} />
+      <Repos repos={repos} />  //show repositories GitHub per user
     </>
   );
 };
